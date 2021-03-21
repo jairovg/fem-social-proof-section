@@ -1,0 +1,22 @@
+{
+  "name": "fem-social-proof-section",
+  "version": "0.0.0",
+  "description": "frontendmentor.io challenge social proof section",
+  "scripts": {
+    "start": "nodemon -e scss,html --watch index.html --watch ./styles --exec \"npm run build\"",
+    "build": "sass styles/index.scss dist/index.css"
+  },
+  "keywords": [
+    "frontendmentor.io",
+    "social",
+    "proof",
+    "section",
+    "challenge"
+  ],
+  "author": "jairovg",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8"
+  }
+}
