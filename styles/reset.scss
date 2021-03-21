@@ -9,8 +9,11 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: $text-default-font-family;
   background-color: $color-background-default;
+  height: 100vh;
   font-size: $text-default-font-size;
   font-weight: 400;
   color: $color-text-default;

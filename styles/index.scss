@@ -3,10 +3,26 @@
 @import './tokens.scss';
 @import './reset.scss';
 
+.section {
+  padding: 0 25px;
+}
+
+.social-proof {
+  margin: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 10px 0 5px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: $lg-device) {
+  .section {
+    padding: 0;
+    max-width: 1110px;
+  }
 }
