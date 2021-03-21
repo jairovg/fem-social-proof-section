@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $text-default-font-family;
+  background-color: $color-background-default;
+  font-size: $text-default-font-size;
+  font-weight: 400;
+  color: $color-text-default;
+}
