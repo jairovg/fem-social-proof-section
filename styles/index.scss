@@ -25,6 +25,41 @@
   }
 }
 
+.ratings {
+  display: grid;
+
+  &__card {
+    display: grid;
+    background-color: $color-background-secondary;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: $color-text-primary-heading;
+    line-height: 16px;
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 24px;
+
+    &--100 {
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjUzOSA2LjA5N2EuMjk3LjI5NyAwIDAwLS4yNC0uMjAybC01LjM2LS43NzlMOC41NDIuMjZhLjI5Ni4yOTYgMCAwMC0uNTMgMEw1LjYxMyA1LjExN2wtNS4zNi43NzlhLjI5Ny4yOTcgMCAwMC0uMTY1LjUwNWwzLjg4IDMuNzgtLjkxNyA1LjM0YS4yOTcuMjk3IDAgMDAuNDMuMzEybDQuNzk1LTIuNTIgNC43OTQgMi41MmEuMjk2LjI5NiAwIDAwLjQzLS4zMTNsLS45MTYtNS4zMzhMMTYuNDY0IDYuNGMuMDgtLjA4LjExLS4xOTcuMDc1LS4zMDR6IiBmaWxsPSIjRUY5NTQ2IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=");
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .attribution {
@@ -54,5 +89,29 @@
   .section {
     padding: 0;
     max-width: 1110px;
+  }
+
+  .ratings {
+    &__card {
+      grid-template-columns: 180px auto;
+      width: 450px;
+
+      &:nth-child(2) {
+        justify-self: center;
+      }
+
+      &:nth-child(3) {
+        justify-self: end;
+      }
+    }
+
+    &__icon {
+      height: 17px;
+    }
+
+    &__caption {
+      display: flex;
+      align-items: center;
+    }
   }
 }
