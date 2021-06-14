@@ -10,6 +10,10 @@
 .social-proof {
   margin: auto;
 
+  &__header-container {
+    margin-bottom: 34px;
+  }
+
   &__header {
     font-size: 14px;
     text-align: center;
@@ -62,6 +66,50 @@
   }
 }
 
+.quotes {
+  display: grid;
+
+  &__card {
+    background-color: $color-background-primary;
+    border-radius: 5px;
+    padding: 40px 32px;
+    margin: 8px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-text-secondary;
+    line-height: 20px;
+  }
+
+  &__user {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 20px 20px;
+    column-gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 40px;
+    grid-row: 1 / span 2;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: inherit;
+    font-weight: 700;
+  }
+
+  &__verified {
+    font-weight: 300;
+    color: $color-text-primary-subheading;
+  }
+
+  &__quote {
+    margin: 0;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -71,11 +119,38 @@
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (min-width: $sm-device) {
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(13, 0.1fr);
+    justify-content: space-between;
+    margin: 0 -10px;
+
+    &__card {
+      margin: 8px 11px;
+
+      &:nth-child(1) {
+        grid-row: 1 / span 10;
+      }
+
+      &:nth-child(2) {
+        grid-row: 2 / span 10;
+      }
+
+      &:nth-child(3) {
+        grid-row: 3 / span 10;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $md-device) {
   .social-proof {
     &__header-container {
       display: grid;
       grid-template-columns: 50% 50%;
+      margin-bottom: 58px;
     }
 
     &__header {
@@ -122,6 +197,12 @@
 
     &__caption {
       display: flex;
+    }
+  }
+
+  .quotes {
+    &__card {
+      font-size: 13px;
     }
   }
 }

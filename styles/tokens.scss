@@ -1,3 +1,4 @@
+$sm-device: 768px;
 $md-device: 1024px;
 $lg-device: 1366px; // Ipad in landscape
 
@@ -12,6 +13,8 @@ $color-background-primary: $color-primary-dark;
 $color-background-secondary: $color-neutral-light;
 $color-text-default: $color-neutral-dark;
 $color-text-primary-heading: $color-primary-dark;
+$color-text-primary-subheading: $color-primary-light;
+$color-text-secondary: $color-neutral-light;
 
 $text-default-font-family: 'Spartan', sans-serif;
 $text-default-font-size: 15px;
