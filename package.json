@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "frontendmentor.io challenge social proof section",
   "scripts": {
-    "start": "nodemon -e scss,html --watch index.html --watch ./styles --exec \"npm run build\"",
-    "build": "sass styles/index.scss dist/index.css"
+    "build": "sass styles/index.scss dist/index.css",
+    "serve": "serve",
+    "start": "nodemon -e scss,html --watch index.html --watch ./styles --exec \"npm run build\""
   },
   "keywords": [
     "frontendmentor.io",
@@ -16,7 +17,8 @@
   "author": "jairovg",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.7",
-    "sass": "^1.32.8"
+    "nodemon": "^2.0.14",
+    "sass": "^1.43.3",
+    "serve": "^12.0.1"
   }
 }
