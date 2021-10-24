@@ -3,7 +3,7 @@
 @import './tokens.scss';
 @import './reset.scss';
 
-.section {
+.main {
   padding: 0 24px 91px;
 }
 
@@ -244,7 +244,7 @@
 }
 
 @media screen and (min-width: $lg-device) {
-  .section {
+  .main {
     padding: 0 0 100px;
     max-width: 1110px;
   }
